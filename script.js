@@ -136,22 +136,56 @@ function processCall(recipient, onAvailable, onNotAvailable) {
   // calculateTotalPrice([164, 48, 291])
   // calculateTotalPrice([412, 371, 94, 63, 176])
 
-  function filterArray(numbers, value) {
-    const filteredNumbers = [];
-    // Change code below this line
-  numbers.forEach(function filterArray(number, value) {
-    if (numbers > value.length) {
-        filteredNumbers.push(numbers);
-      }
-  })
-    // for (let i = 0; i < numbers.length; i += 1) {
-    //   if (numbers[i] > value) {
-    //     filteredNumbers.push(numbers[i]);
-    //   }
-    // }
+  // function filterArray(numbers, value) {
+  //   const filteredNumbers = [];
+  //   // Change code below this line
+  // numbers.forEach(function filterArray(number, value) {
+  //   if (numbers > value.length) {
+  //       filteredNumbers.push(numbers);
+  //     }
+  // })
+  //   // for (let i = 0; i < numbers.length; i += 1) {
+  //   //   if (numbers[i] > value) {
+  //   //     filteredNumbers.push(numbers[i]);
+  //   //   }
+  //   // }
   
-    // Change code above this line
-    return filteredNumbers;
-  }
+  //   // Change code above this line
+  //   return filteredNumbers;
+  // }
 
-  filterArray([1, 2, 3, 4, 5], 4)
+  // filterArray([1, 2, 3, 4, 5], 4)
+
+
+  // const books = [
+  //   {
+  //     title: "The Last Kingdom",
+  //     author: "Bernard Cornwell",
+  //     genres: ["adventure", "history"],
+  //   },
+  //   {
+  //     title: "Beside Still Waters",
+  //     author: "Robert Sheckley",
+  //     genres: ["fiction", "mysticism"],
+  //   },
+  //   {
+  //     title: "Redder Than Blood",
+  //     author: "Tanith Lee",
+  //     genres: ["horror", "mysticism", "adventure"],
+  //   },
+  // ];
+  // // Change code below this line
+  // const allGenres = books.map(book => book.genres);
+  // const uniqueGenres = allGenres.filter((genres, index, array) => {array.indexOf(genres) === index;}) 
+  const players = [
+    { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+    { name: "Poly", playtime: 469, gamesPlayed: 2 },
+    { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+    { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+  ];
+  // Change code below this line
+  
+  const totalAveragePlaytimePerGame = players.reduce((playtime, gamesPlayed) => {
+    return playtime / gamesPlayed;
+  }, 0);
+  
