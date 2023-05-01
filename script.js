@@ -177,15 +177,32 @@ function processCall(recipient, onAvailable, onNotAvailable) {
   // // Change code below this line
   // const allGenres = books.map(book => book.genres);
   // const uniqueGenres = allGenres.filter((genres, index, array) => {array.indexOf(genres) === index;}) 
-  const players = [
-    { name: "Mango", playtime: 1270, gamesPlayed: 4 },
-    { name: "Poly", playtime: 469, gamesPlayed: 2 },
-    { name: "Ajax", playtime: 690, gamesPlayed: 3 },
-    { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
-  ];
-  // Change code below this line
-  
-  const totalAveragePlaytimePerGame = players.reduce((playtime, gamesPlayed) => {
-    return playtime / gamesPlayed;
-  }, 0);
+ 
+  const petya = {
+  username: "Petya",
+  showName() {
+    console.log(petya.username);
+  },
+};
+
+petya.showName();
+
+
+const bookShelf = {
+  authors: ["Бернард Корнуелл", "Роберт Шеклі"],
+  getAuthors() {
+    return this.authors;
+  },
+  addAuthor(authorName) {
+    this.authors.push(authorName);
+  },
+};
+
+console.log(bookShelf.getAuthors()); // ["Бернард Корнуелл", "Роберт Шеклі"]
+bookShelf.addAuthor("Лі Таніт");
+console.log(bookShelf.getAuthors());
+
+
+
+
   
