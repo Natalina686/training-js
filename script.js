@@ -357,9 +357,3 @@ console.log(normalizedToUpperCaseInput === BRAND_NAME); // true
 // }
 // console.log(makeTransaction(500, 10, 5000));
 
-function isNumberNotInRange(start, end, number) {
-  const isInRange = number >= start && number <= end;
-  const isNotInRange != isInRange; // Change this line
-
-  return isNotInRange;
-}
