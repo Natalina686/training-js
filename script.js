@@ -357,3 +357,128 @@ console.log(normalizedToUpperCaseInput === BRAND_NAME); // true
 // }
 // console.log(makeTransaction(500, 10, 5000));
 
+// let cost;
+// const subscription = "premium";
+
+// switch (subscription) {
+//   case "free":
+//     cost = 0;
+//     break;
+
+//   case "pro":
+//     cost = 100;
+//     break;
+
+//   case "premium":
+//     cost = 500;
+//     break;
+
+//   default:
+//     console.log("Invalid subscription type");
+// }
+
+// console.log(cost); // 500
+
+// let counter = 0;
+
+// while (counter < 10) {
+//   console.log("counter: ", counter);
+//   counter += 1;
+// }
+
+// let clientCounter = 18;
+// const maxClients = 25;
+
+// while (clientCounter < maxClients) {
+//   console.log(clientCounter);
+//   clientCounter += 1;
+// }
+
+// let password = "";
+
+// do {
+//   password = prompt("Введіть пароль довший 4-х символів", "");
+// } while (password.length < 5);
+
+// console.log("Ввели пароль: ", password);
+
+// for (let i = 0; i <= 20; i += 5) {
+//   console.log(i);
+// }
+
+// const target = 3;
+// let sum = 0;
+
+// for (let i = 0; i <= target; i += 1) {
+//   sum += i;
+// }
+
+// console.log(sum);
+
+// const max = 10;
+// for (let i = 0; i < max; i += 1) {
+//   console.log(`${max} % ${i} = `, max % i);
+// }
+
+// for (let i = 0; i <= 5; i += 1) {
+//   console.log(i);
+
+//   if (i === 3) {
+//     console.log("Знайшли число 3, перериваємо виконання циклу");
+//     break;
+//   }
+// }
+
+// console.log("Лог після циклу");
+
+// const number = 10;
+
+// for (let i = 0; i < number; i += 1) {
+//   if (i % 2 === 0) {
+//     continue;
+//   }
+
+//   console.log("Непарне i: ", i); // 1, 3, 5, 7, 9
+// }
+
+// function checkStorage(available, ordered) {
+ 
+//   // Change code below this line
+
+//   const message = ordered > available ? "Not enough goods in stock!" : "The order is accepted, our manager will contact you";
+  
+
+//   // Change code above this line
+//   return message;
+// }
+// checkStorage();
+
+function getShippingCost(country) {
+  let message;
+  let price;
+  // Change code below this line
+switch (country) {
+  case "China": 
+    price = 100;
+    message = `Shipping to ${country} will cost ${price} credits`;
+    break;
+  case "Chile":
+    price = 250;
+     message = `Shipping to ${country} will cost ${price} credits`;
+    break;
+    case "Australia":
+    price = 170;
+     message = `Shipping to ${country} will cost ${price} credits`;
+    break;
+    case "Jamaica":
+    price = 120;
+     message = `Shipping to ${country} will cost ${price} credits`;
+    break;
+  default:
+    message = "Sorry, there is no delivery to your country";
+}
+  // Change code above this line
+  return message;
+}
+getShippingCost("Germany");
+getShippingCost("Australia")
