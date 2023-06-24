@@ -453,32 +453,57 @@ console.log(normalizedToUpperCaseInput === BRAND_NAME); // true
 // }
 // checkStorage();
 
-function getShippingCost(country) {
-  let message;
-  let price;
-  // Change code below this line
-switch (country) {
-  case "China": 
-    price = 100;
-    message = `Shipping to ${country} will cost ${price} credits`;
-    break;
-  case "Chile":
-    price = 250;
-     message = `Shipping to ${country} will cost ${price} credits`;
-    break;
-    case "Australia":
-    price = 170;
-     message = `Shipping to ${country} will cost ${price} credits`;
-    break;
-    case "Jamaica":
-    price = 120;
-     message = `Shipping to ${country} will cost ${price} credits`;
-    break;
-  default:
-    message = "Sorry, there is no delivery to your country";
+// function getShippingCost(country) {
+//   let message;
+//   let price;
+//   // Change code below this line
+// switch (country) {
+//   case "China": 
+//     price = 100;
+//     message = `Shipping to ${country} will cost ${price} credits`;
+//     break;
+//   case "Chile":
+//     price = 250;
+//      message = `Shipping to ${country} will cost ${price} credits`;
+//     break;
+//     case "Australia":
+//     price = 170;
+//      message = `Shipping to ${country} will cost ${price} credits`;
+//     break;
+//     case "Jamaica":
+//     price = 120;
+//      message = `Shipping to ${country} will cost ${price} credits`;
+//     break;
+//   default:
+//     message = "Sorry, there is no delivery to your country";
+// }
+//   // Change code above this line
+//   return message;
+// }
+
+
+// prompt(getShippingCost("Australia"));
+
+// const minSalary = 500;
+// const maxSalary = 5000;
+// let employes = 5;
+// let totalSalary = 0;
+//  for (let i = 0; i < employes; i += 1) {
+//   const salary = Math.round(Math.random() * (maxSalary - minSalary) + minSalary)
+//   console.log(`Salary of employes ${i} - ${salary}`);
+//   totalSalary +=salary;
+//  }
+//  console.log(totalSalary);
+
+const min = 5;
+const max = 28;
+let total = 0;
+
+for (let i = min; i < max; i+=1) {
+  if (i % 2 !== 0) {
+    continue;
+  } 
+  console.log(i);
+  total += i;
 }
-  // Change code above this line
-  return message;
-}
-getShippingCost("Germany");
-getShippingCost("Australia")
+console.log(total);
