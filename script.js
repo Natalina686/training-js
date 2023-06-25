@@ -495,15 +495,107 @@ console.log(normalizedToUpperCaseInput === BRAND_NAME); // true
 //  }
 //  console.log(totalSalary);
 
-const min = 5;
-const max = 28;
-let total = 0;
+// const min = 5;
+// const max = 28;
+// let total = 0;
 
-for (let i = min; i < max; i+=1) {
-  if (i % 2 !== 0) {
-    continue;
-  } 
-  console.log(i);
-  total += i;
-}
-console.log(total);
+// for (let i = min; i < max; i+=1) {
+//   if (i % 2 !== 0) {
+//     continue;
+//   } 
+//   console.log(i);
+//   total += i;
+// }
+// console.log(total);
+
+// const clients = ["Mango", "Ajax", "Poly"];
+
+// for (const client of clients) {
+//   console.log(client);
+// }
+
+// const string = "javascript";
+
+// for (const character of string) {
+//   console.log(character);
+// }
+
+// const clients = ["Mango", "Poly", "Ajax"];
+// const clientNameToFind = "Poly";
+// let message;
+
+// for (const client of clients) {
+//   // На кожній ітерації будемо перевіряти чи збігається елемент масиву з
+//   // іменем клієнта. Якщо збігається - записуємо в message повідомлення
+//   // про успіх і робимо break, щоб далі не шукати
+//   if (client === clientNameToFind) {
+//     message = "Клієнт з таким ім'ям є в базі даних!";
+//     break;
+//   }
+
+//   // Якщо вони не збігаються - записуємо в message повідомлення про відсутність імені
+//   message = "Клієнт з таким ім'ям відсутній в базі даних!";
+// }
+
+// console.log(message); // "Клієнт з таким ім'ям є в базі даних!"
+
+// const numbers = [1, 3, 14, 18, 4, 7, 29, 6, 34];
+// const threshold = 15;
+
+// for (const number of numbers) {
+//   if (number < threshold) {
+//     continue;
+//   }
+//   console.log(number);
+// }
+// or
+// const numbers = [1, 3, 14, 18, 4, 7, 29, 6, 34];
+// const threshold = 15;
+
+// // Для чисел, менших ніж порогове значення, спрацьовує continue, виконання тіла
+// // припиняється і управління передається на наступну ітерацію.
+// for (let i = 0; i < numbers.length; i += 1) {
+//   if (numbers[i] < threshold) {
+//     continue;
+//   }
+
+//   console.log(`Число більше за ${threshold}: ${numbers[i]}`); // 18, 29, 34
+// }
+
+// const nam = "Mango";
+// console.log(nam.split("")); // ["M", "a", "n", "g", "o"]
+
+// const message = "JavaScript - це цікаво";
+// console.log(message.split(" ")); // ["JavaScript", "-", "це", "цікаво"]
+
+// const words = ["JavaScript", "це", "цікаво"];
+// console.log(words.join("")); // "JavaScriptцецікаво"
+// console.log(words.join(" ")); // "JavaScript це цікаво"
+// console.log(words.join("-")); // "JavaScript-це-цікаво"
+
+// // Виносимо варіанти в масив
+// const redFruits = ["apple", "strawberry", "cherry", "cranberries"];
+// const fruit = "cherry";
+// // Перевіряємо присутність елемента
+// const hasFruit = redFruits.includes(fruit);
+
+// if (hasFruit) {
+//   console.log(`${fruit} is a red fruit!`);
+// }
+
+const numbers = [1, 2, 3, 4, 5];
+
+console.log(numbers.pop()); //  5
+console.log(numbers); // [1, 2, 3, 4]
+
+console.log(numbers.pop()); //  4
+console.log(numbers); // [1, 2, 3]
+
+console.log(numbers.pop()); //  3
+console.log(numbers); // [1, 2]
+
+console.log(numbers.pop()); //  2
+console.log(numbers); // [1]
+
+console.log(numbers.pop()); //  1
+console.log(numbers); // []
